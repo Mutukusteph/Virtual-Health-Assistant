@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Virtual Health Assistant</title>
+    </head>
+    <body>
+        <header>
+            <h1>Virtual Health Assistant</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="profile.html">Profile</a>
+                <a href="#info">Health Information</a>
+                <a href="#symptom-checker">Symptom Checker</a>
+                <a href="#appointments">Appointment Scheduling</a>
+            </nav>
+        </header>
+        <main>
+            <section id="login">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+                    
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    
+                    <button type="submit">Login</button>
+                </form>
+            </section>            
+            <!-- Health Information -->
+            <section id="info">
+                <h2>Health Information</h2>
+                <p>Welcome to the Health Information section. Here you can find tips on maintaining a healthy lifestyle, understanding various medical conditions, and more.</p>
+                
+                <div class="info-category">
+                    <h3>Nutrition</h3>
+                    <p>Learn about healthy eating habits, essential nutrients, and meal planning.</p>
+                </div>
+                <div class="info-category">
+                    <h3>Exercise</h3>
+                    <p>Discover exercise that are beneficial for different age groups and fitness levels.</p>
+                </div>
+                <div class="info-category">
+                    <h3>Mental Health</h3>
+                    <p>Explore tips for managing stress, anxiety, and mainteining mental well-being</p>
+                </div>
+                <a href="https://www.example.com" target="_blank">More Resources</a>
+            </section>
+            <!-- Symptoms -->
+            <section id="symptom-checker">
+                <h2>symptom Checker</h2>
+                <form id="symptom-form">
+                    <label for="symptom">Descibe you symptoms:</label>
+                    <textarea id="symptom" name="symptom" rows="4" required></textarea>
+                    <button type="submit">Check Symptoms</button>
+                </form>
+                <div id="symptom-result"></div>
+            </section>
+            <!-- Appointments -->
+            <section id="appointments">
+                <h2>Appointment Scheduling</h2>
+                <form id="appointment-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br />
+                    <br />
+                    <label for="Date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    <br />
+                    <br />
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    <br />
+                    <br />
+                    <button type="submit">Schedule Appointment</button>
+                </form>
+                <div id="appointment-result"></div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer>
+            <p>&copy; 2024 Virtual Health Assistant</p>
+        </footer>
+    </body>
+</html>
